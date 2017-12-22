@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="jquery.mmenu.all.css">
+
+    <title>Menu Mobile</title>
+</head>
+<body>
+    
+     <!-- The page -->
+     <div class="page">
+        <div class="header">
+           <a href="#menu">
+               <span class="icone"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></span>
+           </a>
+        </div>
+        <div class="content">
+           <p><strong>This is a demo.</strong><br />
+              Click the menu icon to open the menu.</p>
+        </div>
+     </div>
+
+     <!-- The menu -->
+     <nav id="menu">
+        <ul>
+           <li><a href="/">Home</a></li>
+           <li><a href="/about">About us</a>
+              <ul>
+                 <li><a href="/about/history">History</a></li>
+                 <li><a href="/about/team">The team</a></li>
+                 <li><a href="/about/address">Our address</a></li>
+              </ul>
+           </li>
+           <li><a href="/contact">Contact</a></li>
+        </ul>
+     </nav>
+
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="jquery.mmenu.all.js"></script>
+    <script src="https://use.fontawesome.com/00f759117f.js"></script>
+
+    <script>
+        jQuery(document).ready(function( $ ) {
+            $("#menu").mmenu();
+         });
+    </script>
+</body>
+</html>
